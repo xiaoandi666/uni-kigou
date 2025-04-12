@@ -3,7 +3,8 @@
   <button
   @tap="
   memberStore.setProfile({
-    nickname:'黑马先锋'})" > 保存</button>
+    nickname:'黑马先锋',
+    token:'12345'})" > 保存</button>
    <button @tap="getData">测试请求</button>
 </template>
 
@@ -11,14 +12,15 @@
 import { ref } from 'vue'
 import { useMemberStore } from '@/stores/modules/member';
 const memberStore=useMemberStore()
-import '@/utils/http'
+import{http} from'@/utils/http'
 ///测试请求
 const title = ref('Hello')
-const getData=()=>{
-  uni.request({
+const getData= async()=>{
+  const res=await http<string[]>({
     method:'GET',
     url:'/home/banner'
   })
+  console.log('请求成功',res)
 }
 </script>
 

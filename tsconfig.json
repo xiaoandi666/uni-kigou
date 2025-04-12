@@ -7,9 +7,9 @@
       "@/*": ["./src/*"]
     },
     "lib": ["esnext", "dom"],
-    "types": ["@dcloudio/types",
-    
-  ]
+    "types": ["@dcloudio/types"],
+    // 如果需要保留导入语句，可以添加此选项
+    "verbatimModuleSyntax": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
