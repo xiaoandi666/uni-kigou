@@ -1,87 +1,79 @@
 {
-    "tabBar": {
-		"color": "#999999",
-    "selectedColor": "#1296db",
-    "backgroundColor": "#ffffff",
-	"borderStyle": "black",
-
-	"list": [
+	"tabBar": {
+	  "color": "#999999",
+	  "selectedColor": "#1296db",
+	  "backgroundColor": "#ffffff",
+	  "borderStyle": "black",
+	  "list": [
 		{
 		  "pagePath": "pages/index/index",
 		  "text": "首页",
 		  "iconPath": "static/home.png",
 		  "selectedIconPath": "static/home_select.png"
 		},
-		
-		
 		{
-           "pagePath": "pages/refresh/refresh",
-		   "text": "刷刷",
-		   "iconPath":"static/refresh.png",
+		  "pagePath": "pages/refresh/refresh",
+		  "text": "刷刷",
+		  "iconPath": "static/refresh.png",
 		  "selectedIconPath": "static/refresh_select.png"
-
 		},
 		{
-			"pagePath": "pages/live/live",
-			"text": "直播",
-			"iconPath":"static/video.png",
-		   "selectedIconPath": "static/video_select.png"
- 
-		 },
-		 {
-			"pagePath": "pages/my/my",
-			"text": "我的",
-			"iconPath":"static/my.png",
-			"selectedIconPath": "static/my_select.png"
-		  }
-
-	  ]
-
-	},
-	//是否开启自动扫描
-	"easycom": {
-		"autoscan": true,
-		"custom": {
-			// uni-ui 规则如下配置
-			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		  "pagePath": "pages/live/live",
+		  "text": "直播",
+		  "iconPath": "static/video.png",
+		  "selectedIconPath": "static/video_select.png"
+		},
+		{
+		  "pagePath": "pages/my/my",
+		  "text": "我的",
+		  "iconPath": "static/my.png",
+		  "selectedIconPath": "static/my_select.png"
 		}
+	  ]
 	},
-	"pages": [ 
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "首页"
-			}
-		},
-		{
-			"path": "pages/my/my",
-			"style": {
-				"navigationBarTitleText": "我的"
-			}
-		},
-		{
-			"path": "pages/login/login",
-			"style": {
-				"navigationBarTitleText": "login"
-			}
-		},
-		{
-			"path": "pages/live/live",
-			"style": {
-				"navigationBarTitleText": "直播"
-			}
-		},
-		{
-			"path": "pages/refresh/refresh",
-			"style": {
-				"navigationBarTitleText": "刷刷"
-			}
-		},
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+		"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+	  }
+	},
+	"pages": [
+	  {
+		"path": "pages/index/index",
+		"style": {
+		  "navigationBarTitleText": "首页",
+		  "navigationStyle": "custom"
+		}
+	  },
+	  {
+		"path": "pages/my/my",
+		"style": {
+		  "navigationBarTitleText": "我的"
+		}
+	  },
+	  {
+		"path": "pages/login/login",
+		"style": {
+		  "navigationBarTitleText": "login"
+		}
+	  },
+	  {
+		"path": "pages/live/live",
+		"style": {
+		  "navigationBarTitleText": "直播"
+		}
+	  },
+	  {
+		"path": "pages/refresh/refresh",
+		"style": {
+		  "navigationBarTitleText": "刷刷"
+		}
+	  }
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+	  "navigationBarTextStyle": "black",
+	  "navigationBarTitleText": "uni-app",
+	  "navigationBarBackgroundColor": "#F8F8F8",
+	  "backgroundColor": "#F8F8F8"
 	}
-}
+  }
